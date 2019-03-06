@@ -38,8 +38,6 @@ def sign_pdf(args):
     else:
         output_filename = args.output
 
-    output_filename = args.output
-
     pdf_fh = open(args.pdf, 'rb')
     sig_tmp_fh = None
 
