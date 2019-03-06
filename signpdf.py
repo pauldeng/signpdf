@@ -71,5 +71,4 @@ def sign_pdf(args):
             handle.close()
 
 
-if __name__ == '__main__':
-    sign_pdf(parser.parse_args())
+sign_pdf(parser.parse_args())
