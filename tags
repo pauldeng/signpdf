@@ -4,11 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-_get_tmp_filename	signpdf.py	/^def _get_tmp_filename(suffix=".pdf"):$/;"	f
-help	signpdf.py	/^                    help="Output file. Defaults to input filename plus '_signed'")$/;"	v
-help	signpdf.py	/^        help="Coordinates to place signature. Format: PAGExXxYxWIDTHxHEIGHT.  1x200x300x125x40 means page 1, 200 units horizontally from the bottom left, 300 units vertically from the bottom left, 125 units wide, 40 units tall. Pages count starts at 1 (1-based indexing).  Units are pdf-standard units (1\/72 inch).")$/;"	v
+_get_tmp_filename	signpdf.py	/^def _get_tmp_filename(suffix='.pdf'):$/;"	f
+default	signpdf.py	/^                    default='2x100x100x125x40',$/;"	v
+help	signpdf.py	/^                    help='Coordinates to place signature. Format: PAGExXxYxWIDTHxHEIGHT. 1x200x300x125x40 means page 1, 200 units horizontally from the bottom left, 300 units vertically from the bottom left, 125 units wide, 40 units tall. Pages count starts at 1 (1-based indexing). Units are pdf-standard units (1\/72 inch).')$/;"	v
+help	signpdf.py	/^                    help='Output file. Defaults to input filename plus "_signed"')$/;"	v
+help	signpdf.py	/^                    help='Rename document or not')$/;"	v
 main	signpdf.py	/^def main():$/;"	f
 nargs	signpdf.py	/^                    nargs='?',$/;"	v
-parser	signpdf.py	/^parser = argparse.ArgumentParser("Add signatures to PDF files")$/;"	v
+parser	signpdf.py	/^parser = argparse.ArgumentParser('Add signatures to PDF files')$/;"	v
 read	setup.py	/^def read(fname):$/;"	f
 sign_pdf	signpdf.py	/^def sign_pdf(args):$/;"	f
