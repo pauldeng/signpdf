@@ -36,8 +36,9 @@ def sign_pdf(args):
         output_filename = args.output or '{}_signed{}'.format(
             *os.path.splitext(args.pdf))
     else:
-        output_filename = args.output or '{}{}'.format(
-            *os.path.splitext(args.pdf))
+        output_filename = args.output
+
+    output_filename = args.output
 
     pdf_fh = open(args.pdf, 'rb')
     sig_tmp_fh = None
