@@ -32,11 +32,10 @@ def sign_pdf(args):
     page_num, x1, y1, width, height = [int(a) for a in args.coords.split('x')]
     page_num -= 1
 
-    if args.rename:
-        output_filename = args.output or '{}_signed{}'.format(
-            *os.path.splitext(args.pdf))
-    else:
+    if args.output:
         output_filename = args.output
+    else:
+        output_filename = '{}{}'.format(*os.path.splitext(args.pdf))
 
     pdf_fh = open(args.pdf, 'rb')
     sig_tmp_fh = None
