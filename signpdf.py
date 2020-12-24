@@ -44,7 +44,7 @@ def sign_pdf(args):
 
         if i == page_num:
             # Create PDF for signature
-            with tempfile.NamedTemporaryFile(suffix='.pdf') as fh:
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as fh:
                 sig_tmp_filename = fh.name
                 c = canvas.Canvas(sig_tmp_filename, pagesize=page.cropBox)
                 c.drawImage(args.signature, x1, y1, width, height, mask='auto')
