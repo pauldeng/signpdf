@@ -31,6 +31,10 @@ def sign_pdf(args):
         output_filename = args.output
     else:
         output_filename = '{}{}'.format(*os.path.splitext(args.pdf))
+        if output_filename.endswith(".PDF"):
+            output_filename = output_filename.split(".PDF",1)[0] + "_stamped" + ".PDF"
+        if output_filename.endswith(".pdf"):
+            output_filename = output_filename.split(".pdf",1)[0] + "_stamped" + ".pdf"
 
     pdf_fh = open(args.pdf, 'rb')
     sig_tmp_fh = None
