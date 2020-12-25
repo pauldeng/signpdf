@@ -19,7 +19,7 @@ Install with pip:
 
 Or from git:
 
-    git clone https://github.com/yourcelf/signpdf
+    git clone https://github.com/pauldeng/signpdf
     cd signpdf
     virtualenv venv
     source venv/bin/activate
@@ -42,6 +42,6 @@ Coordinates format is:  ``<pagenum>x<x-coord>x<y-coord>x<width>x<height>``.
 Other options:
 
  - ``--date`` Append a date to the right of the signature.
- - ``--output`` Destination filename.  Default is to append ``_signed`` to the incoming PDF name.
+ - ``--output`` Destination filename.  Default is to append ``_stamped`` to the incoming PDF name.
 
 For more usage details, run ``signpdf --help``.
