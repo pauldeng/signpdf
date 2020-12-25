@@ -10,6 +10,14 @@ images like some alternatives).
 
 Cons: no gui yet.
 
+Paul's Update
+-
+
+I updated the original script to meet my personal requirements. These changes are:
+* Fixed a temp file permission error on Windows platform
+* Fixed the default output pdf file name issue
+* Added a Windows batch script for batch process automation
+
 Installation
 ------------
 
